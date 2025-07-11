@@ -3,7 +3,7 @@ import React from "react";
 function CalendarView(){
     return(
         <>
-        <p>calendar</p>
+        <p>calendar is coming</p>
         </>
     )
 }
