@@ -1,12 +1,12 @@
 /* calendar */
 
-.calendar-body{
+/* .calendar-body{
 background-image:url(https://wallpapercave.com/wp/wp8003033.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 height: 100vh;
-}
+} */
 
 .calendar-container {
   max-width: 1280px;
@@ -42,7 +42,7 @@ height: 100vh;
 }
 
 /* Desktop styles*/
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .calendar-layout {
     display: flex;
     gap: 2rem;
@@ -63,7 +63,7 @@ height: 100vh;
   .desktop-view {
     display: flex;
   }
-}
+} */
 
 .date-label {
   display: block;
@@ -99,6 +99,52 @@ height: 100vh;
 .empty-text {
   color: #9ca3af;
 }
+
+
+.calendar-body {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.calendar-body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.calendar-body.dark .form-control,
+.calendar-body.dark .btn,
+.calendar-body.dark .list-group-item {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #333;
+}
+
+.mobile-layout {
+  width: 100%;
+}
+
+.desktop-layout {
+  display: flex;
+}
+
+.calendar-column {
+  width: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+  .calendar-column,
+  .form-column {
+    /* width: 100% !important; */
+    width: 200px;
+  }
+}
+
+
+.appointment-list-column{
+  width: 200px;
+}
+
 
 
 /* appointment */
